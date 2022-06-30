@@ -46,6 +46,7 @@ dataPar.className = "data"
 senderPar.className = "sender"
   wrapper.className = 'messageCard';
   textPar.className = "text"
+
   textPar.textContent = text;
   senderPar.textContent = sender;
   // dataPar.textContent = date.split('T')[0].split('-').reverse().join('-');

@@ -55,7 +55,7 @@ body {
 .messageCard {
   display: flex;
   flex-direction: column;
-color:black;
+  color: black;
   padding: 0 20px;
 }
 
@@ -67,14 +67,34 @@ color:black;
 }
 
 @media only screen and (min-width: 767px) {
+  .logo-not {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+  }
   .logo {
-    width: 350px;
+    width: 550px;
     margin-bottom: 50px;
+    margin-right: 700px;
+  }
+  .btn {
+    background-color: #4267b2;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: white;
+    height: 50px;
+  }
+  .badge {
+    background-color: rgb(53, 255, 53);
+    padding: 10px;
+    border-radius: 100px;
+    margin-left: 100px;
+    width: 20px;
   }
 
   .main-content {
     margin: 50px;
-  
   }
   .friends {
     display: flex;
@@ -109,27 +129,39 @@ color:black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
   }
   .messages {
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     display: flex;
     background-color: #d7d7d8;
     border-radius: 20px;
-    
+    gap: 10px;
   }
-  .data { color:#4267b2}
-  .sender {font-weight: bold ;}
+  .search {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  .data {
+    color: #4267b2;
+  }
+  .sender {
+    font-weight: bold;
+  }
   .par {
     padding-right: 5px;
     color: white;
   }
-  .text {font-weight: thin;}
+  .text {
+    font-weight: thin;
+  }
   .messageCard {
     display: flex;
     flex-direction: column;
-background-color: white;
+    background-color: white;
     padding: 0 20px;
   }
   .input-text,
@@ -148,7 +180,6 @@ background-color: white;
   }
   .filter-input {
     margin: 0 20px;
-    
   }
   .filter-input {
     padding: 10px;
@@ -156,23 +187,23 @@ background-color: white;
     border-radius: 5px;
   }
 
-  ::placeholder {padding:10px;}
+  ::placeholder {
+    padding: 10px;
+  }
   .add-new-message-btn {
     padding: 15px;
     border-radius: 30px;
-    background-color: #4267B2;
+    background-color: #4267b2;
     color: white;
     border-color: rgb(216, 214, 214);
-
   }
   .add-new-message-btn:hover {
     background-color: rgb(185, 185, 187);
-    
   }
   .messages-list {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 }

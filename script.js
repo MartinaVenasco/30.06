@@ -26,6 +26,8 @@ GET('https://edgemony-backend.herokuapp.com/messages').then((messagesList) => {
   messagesList.reverse().map(({text, sender, date}) => createMessageEl(messagesListEl, text, sender, date)) // Questo è identico a quello che succede in riga 11
 })
 
+
+
 inputTextEl.addEventListener('input', (e) => messageBodyPost.text = e.target.value);
 
 inputSender.addEventListener('input', (e) => {
