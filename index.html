@@ -7,11 +7,14 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-
-  <div class="main-content"><div class="logo-not"> <img class ="logo" src="/fb_Tavola disegno 1_Tavola disegno 1.png"><button type="button" class="btn">
-    Notifiche <br> <span class="badge">4</span>
-    </button></div>
+<body> <header>
+ <div class="navbar-container"> <img class ="logo" src="/fb_Tavola disegno 1_Tavola disegno 1.png"> <navbar  class="navbar"> <h3>
+    Notifiche</h3> <span id = "count-message"></span><div class="filter">
+      <input type="text" class="filter-input" id="filter-input" placeholder="Filtra per..."> 
+    </div>
+    </navbar></div></div></header>
+    
+  <div class="main-content">
   <section class="friends"></section>
   <section class="messages">
     <div class="add-new-message">
@@ -19,12 +22,11 @@
       
       <button class="add-new-message-btn">POST</button>
     </div>
-    <div class="filter">
-      <input type="text" class="filter-input" id="filter-input" placeholder="Filtra per..."> <img class="search" src="/search-02.png">
-    </div>
-    <div class="messages-list"></div>
-  </section>
+    
+    <div class="messages-list"> </div>
  
+  </section>
+ <section class="ads">  </section>
   <script src="./script.js" type="module"></script>
   <script src="./utils.js" type="module"></script>
   <script src="./api.js" type="module"></script>

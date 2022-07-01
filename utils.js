@@ -37,23 +37,28 @@ par.className = "par"
   parent.appendChild(wrapper);
 }
 
-const createMessageEl = (parent, text, sender, date) => {
+const createMessageEl = (parent, id, text, sender, date, callback = () => {}) => { 
   const wrapper = c('div');
   const textPar = c('p');
   const senderPar = c('p');
   const dataPar = c('p');
+
 dataPar.className = "data"
 senderPar.className = "sender"
   wrapper.className = 'messageCard';
   textPar.className = "text"
-
+ wrapper.setAttribute('id', id);
   textPar.textContent = text;
   senderPar.textContent = sender;
   // dataPar.textContent = date.split('T')[0].split('-').reverse().join('-');
   dataPar.textContent = date;
-
+  wrapper.addEventListener('click', callback)
   wrapper.append(textPar, senderPar, dataPar);
   parent.appendChild(wrapper);
 }
 
-export { c, q, createCard, createFriendEl, createMessageEl };
+
+
+
+let badge = document.getElementById("count-message");
+export { c, q, createCard, createFriendEl, createMessageEl, badge };
